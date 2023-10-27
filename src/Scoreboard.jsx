@@ -57,7 +57,6 @@ function Scoreboard() {
             })
             if(response.ok) {
                 const data = await response.json();
-                console.log(data);
                 setRanking(data);
                 setSubmit(true);
                 setError(null);

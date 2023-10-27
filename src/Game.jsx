@@ -32,7 +32,7 @@ function Game() {
     
           
     async function submitGuess() {
-       console.log(guess)
+      
         setTarget(false);
         try {
 
@@ -92,9 +92,7 @@ function Game() {
     }, [guess])
 
     function handleClick(e) {
-        if (window.matchMedia("(max-width: 600px)").matches) {
-            console.log('max width 600')
-        }
+
 
         const scrollDiv = document.querySelector('#main');
         
@@ -119,7 +117,6 @@ function Game() {
 
     async function handleButton(e) {
         e.stopPropagation();
-        console.log(e.target.value.toLowerCase());
         setGuess({...coordinate, name: e.target.value.toLowerCase()})
         
         
