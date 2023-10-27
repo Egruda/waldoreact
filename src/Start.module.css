@@ -1,0 +1,45 @@
+.button {
+    font-size: 20px;
+    padding: 30px 60px;
+    border-radius: 20px;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 30vw;
+
+  
+}
+
+.title {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .title {
+        display:block;
+        text-align: center;
+        background-color: whitesmoke;
+        opacity: 0.8;
+        padding: 15px 50px;
+    }
+
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('./assets/background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 40%;
+        
+        
+    }
+}

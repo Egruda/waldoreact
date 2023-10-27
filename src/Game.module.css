@@ -1,0 +1,105 @@
+ .imageDiv {
+    width: 1300px;
+    height: 563px;
+    padding: 0;
+    margin: 0;
+    background:url('./assets/animallow.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    
+}
+ 
+.windowTarget {
+    width: 50px;
+    height: 50px;
+    
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    font-size: 15px;
+}
+
+.message {
+  
+    font-size: 20px;
+    
+}
+
+.animals {
+    display: flex;
+    gap: 30px;
+
+    background-color: whitesmoke;
+    padding: 0px 20px;
+}
+
+.animal {
+    font-size: 20px;
+}
+
+.messageDiv {
+    display: flex;
+    justify-content: center;
+    border: 1px black solid;
+    align-items: center;
+   
+    min-height: 30px;
+    padding: 0px 20px;
+    background-color: whitesmoke;
+} 
+
+@media (max-width: 600px) {
+    .animals {
+        
+        position: sticky;
+        left: 0;
+        
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+
+    .animal {
+        text-align: center;
+        font-size: 15px;
+        margin: 20px 0;
+    }
+
+    .message {
+        font-size: 15px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    h1 {
+        text-align: center;
+        
+    }
+
+    .messageDiv{
+    
+        width: 100vw;
+        box-sizing: border-box;
+        position: sticky;
+        left: 0;
+        border: none;
+       
+      }
+
+    .imageDiv {
+   
+     
+    
+    }
+
+}

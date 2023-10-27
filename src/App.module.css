@@ -1,0 +1,49 @@
+
+
+
+.heading {
+  text-align: center;
+  background-color: whitesmoke;
+  opacity: 0.8;
+  padding: 15px 50px;
+} 
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  max-width: 1300px;
+  min-height: 600px;
+} 
+
+@media (max-width: 600px) {
+  .main {
+    /* display: block; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    overflow-x: auto;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    
+    
+    
+  }
+
+
+
+  .heading{
+    font-size: 22px;
+    position: sticky;
+    left: 0;
+    display: none;
+
+  }
+
+
+}
