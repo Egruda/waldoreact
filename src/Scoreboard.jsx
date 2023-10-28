@@ -13,7 +13,7 @@ function Scoreboard() {
     useEffect(()=> {
         async function getTime() {
             try {
-                const response = await fetch('http://localhost:3000/time', {
+                const response = await fetch('https://frosty-field-5257.fly.dev/time', {
                     method: 'GET',
                     credentials: 'include',
                 })
@@ -47,7 +47,7 @@ function Scoreboard() {
         setLoading(true)
         
         try {
-            const response = await fetch('http://localhost:3000/name', {
+            const response = await fetch('https://frosty-field-5257.fly.dev/name', {
                 method: 'POST',
                 credentials: 'include',
                 headers: {

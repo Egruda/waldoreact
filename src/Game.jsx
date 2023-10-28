@@ -36,7 +36,7 @@ function Game() {
         setTarget(false);
         try {
 
-        const response = await fetch('http://localhost:3000/target', {
+        const response = await fetch('https://frosty-field-5257.fly.dev/target', {
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json'

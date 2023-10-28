@@ -8,7 +8,7 @@ function Start() {
     
     const handleClick = async () => {
         try {
-            const response = await fetch('http://localhost:3000', {
+            const response = await fetch('https://frosty-field-5257.fly.dev', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
